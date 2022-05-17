@@ -31,3 +31,9 @@ nav {
   gap: 2em;
   list-style: none;
 }
+
+.footer {
+  position: fixed;
+  bottom: 15px;
+  left: 40%;
+}
