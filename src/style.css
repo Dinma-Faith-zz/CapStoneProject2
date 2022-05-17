@@ -7,6 +7,7 @@
 
 img {
   display: block;
+  width: 100%;
 }
 
 a {
@@ -44,10 +45,6 @@ nav {
   padding: 10%;
 }
 
-img {
-  width: 100%;
-}
-
 .meals {
   font-size: large;
   padding: 5% 0;
@@ -69,5 +66,3 @@ button {
   bottom: 15px;
   left: 40%;
 }
-
-

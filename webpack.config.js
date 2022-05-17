@@ -1,10 +1,10 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "development",
+  mode: 'development',
   devServer: {
-    static: { directory: path.resolve(__dirname, "./dist") },
+    static: { directory: path.resolve(__dirname, './dist') },
     historyApiFallback: true,
     open: true,
     compress: true,
@@ -12,18 +12,18 @@ module.exports = {
     port: 5500,
   },
   entry: {
-    main: path.resolve(__dirname, "./src/index.js"),
+    main: path.resolve(__dirname, './src/index.js'),
   },
 
   output: {
-    path: path.resolve(__dirname, "./dist"),
-    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, './dist'),
+    filename: '[name].bundle.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "webpack Boilerplate",
-      template: path.resolve(__dirname, "./src/template.html"), // template file
-      filename: "index.html", // output file
+      title: 'webpack Boilerplate',
+      template: path.resolve(__dirname, './src/template.html'), // template file
+      filename: 'index.html', // output file
     }),
   ],
   module: {
@@ -31,25 +31,24 @@ module.exports = {
       // CSS, PostCSS, and Sass
       {
         test: /\.(scss|css)$/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
       // Images
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
       },
       // Fonts and SVGs
       {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-        type: "asset/inline",
+        type: 'asset/inline',
       },
       // JavaScript
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ["babel-loader"],
+        use: ['babel-loader'],
       },
-     
     ],
   },
 };
