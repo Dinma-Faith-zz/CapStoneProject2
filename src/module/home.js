@@ -8,8 +8,9 @@ const display = async () => {
     .map(
       (meal) => `<div>
   <img src="${meal.strMealThumb}">
-  <p class="meals">${meal.strMeal}</p>
+  <span class="meals">${meal.strMeal}</span>
   <i class="fa fa-thumbs-up"></i>
+  <br>
   <button>Comments</button>
   </div>`,
     );
