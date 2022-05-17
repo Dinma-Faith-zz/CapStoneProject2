@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
 
   <body>
-    <div id="root"></div>
+    <header>
+      <nav>
+        <a href="#">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtAqYowT2yNJA-arBBEyMIBWVfwRTn74feog&usqp=CAU"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+        <ul class="nabvar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script src="./index.js"></script>
   </body>
 </html>

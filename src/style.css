@@ -1,3 +1,33 @@
-body {
-    background-color: blue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo {
+  height: 3em;
+  width: 3em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6em;
+}
+
+.nabvar {
+  display: flex;
+  gap: 2em;
+  list-style: none;
 }
