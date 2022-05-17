@@ -32,8 +32,42 @@ nav {
   list-style: none;
 }
 
-.footer {
+.home-section {
+  text-align: center;
+  padding-top: 7%;
+}
+
+.display-home {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5%;
+  padding: 10%;
+}
+
+img {
+  width: 100%;
+}
+
+.meals {
+  font-size: large;
+  padding: 5% 0;
+}
+
+button {
+  height: 40px;
+  background-color: rgb(49, 39, 39);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3%;
+  padding-inline: 10%;
+  font-size: 100%;
+}
+
+.footer-div {
   position: fixed;
   bottom: 15px;
   left: 40%;
 }
+
+
