@@ -32,7 +32,6 @@ function closeModal() {
 overlay.addEventListener('click', closeModal);
 modal.addEventListener('click', (e) => {
   if (!e.target.matches('.icon')) return;
-  console.log(e.target);
   closeModal();
 });
 

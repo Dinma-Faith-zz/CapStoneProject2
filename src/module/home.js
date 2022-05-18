@@ -14,7 +14,7 @@ const display = async () => {
   <br>
   <button id="${id}" class="popup-btn">Comments</button>
   </div>`,
-      (id = id + 1)
+      (id += 1)
     )
     .join('');
 };
