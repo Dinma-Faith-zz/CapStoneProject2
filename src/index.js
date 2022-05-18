@@ -11,6 +11,5 @@ window.addEventListener('click', (e) => {
     const i = e.target.id;
     displayPopup(i);
     getComments(i);
-    console.log(e.target.id);
   }
 });
