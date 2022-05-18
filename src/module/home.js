@@ -7,15 +7,14 @@ const display = async () => {
   displayHome.innerHTML = data.meals
     .slice(0, 6)
     .map(
-      (meal, id) =>
-        `<div id="${id}" class="meals-div">
+      (meal, id) => `<div id="${id}">
   <img src="${meal.strMealThumb}">
   <span class="meals">${meal.strMeal}</span>
   <i class="fa fa-thumbs-up"></i>
   <br>
   <button id="${id}" class="popup-btn">Comments</button>
   </div>`,
-      id++
+      (id = id + 1)
     )
     .join('');
 };
