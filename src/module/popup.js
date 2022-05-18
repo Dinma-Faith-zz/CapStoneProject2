@@ -19,7 +19,7 @@ const displayPopup = async (i) => {
     <p class="popup-meal-details">Country: "${meal.strArea}"</P>
     <p class="popup-meal-details">Video Link: <a href="${meal.strYoutube}">Watch here</a></P>
 </div>
-  </div>`
+  </div>`,
     )
     .join('');
 };
