@@ -1,5 +1,4 @@
 import './style.css';
-import display from './module/home.js';
 import displayPopup from './module/popup.js';
 import { createLike, getLikes } from './module/likes.js';
 
