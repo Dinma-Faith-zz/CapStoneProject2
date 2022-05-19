@@ -40,6 +40,7 @@
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "cors": "^2.8.5"
   }
 }
