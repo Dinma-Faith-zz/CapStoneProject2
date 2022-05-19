@@ -4,6 +4,7 @@ const display = async () => {
   let id = 0;
   const fetchData = await fetch(`${url}/search.php?f=f`);
   const data = await fetchData.json();
+  console.log(data);
   displayHome.innerHTML = data.meals
     .slice(0, 6)
     .map(
