@@ -1,6 +1,6 @@
 import './style.css';
 // import displayPopup from './module/popup.js';
-import { createLike, getLikes } from './module/likes.js';
+// import { createLike, getLikes } from './module/likes.js';
 import displayPopup, { getComments, postComments } from './module/popup.js';
 import display from './module/home.js';
 // import { itemCounter } from './module/ItemsCounter';
@@ -34,7 +34,6 @@ window.addEventListener('submit', (e) => {
     postComments(i, comment);
   }
 });
-
 
 // window.addEventListener('click', (e) => {//
 //   if (!e.target.matches('.fa-thumbs-up')) return;
