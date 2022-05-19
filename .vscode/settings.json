@@ -1,5 +1,5 @@
 {
     "liveServer.settings.port": 5501,
     "prettier.trailingComma": "all",
-    "files.autoSave": "afterDelay"
+    "prettier.printWidth": 100
 }
