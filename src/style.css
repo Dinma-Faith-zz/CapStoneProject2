@@ -79,7 +79,7 @@ button {
   border-radius: 0.25rem;
   background-color: white;
   z-index: 1;
-  height: 40em;
+  height: 90vh;
   width: 40em;
 }
 
@@ -116,8 +116,8 @@ button {
 }
 
 .popup-img {
-  width: 25em;
-  height: 20em;
+  width: 12em;
+  height: 10em;
   margin-bottom: 1em;
 }
 
@@ -127,12 +127,13 @@ button {
 }
 
 .popup-grid {
-  border: 1px solid #000;
   padding: 0.5em;
   width: 25em;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 1em;
+  text-align: left;
+  margin-left: 10%;
 }
 
 .popup-meal-details {
