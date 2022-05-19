@@ -1,8 +1,8 @@
 import './style.css';
-// import displayPopup from './module/popup.js';
+import displayPopup from './module/popup.js';
 import { createLike, getLikes } from './module/likes.js';
 import displayPopup, { getComments, postComments } from './module/popup.js';
-// import getComments, { postComments } from './module/comments.js'
+import getComments, { postComments } from './module/comments.js'
 
 display();
 window.addEventListener('click', (e) => {
@@ -34,11 +34,10 @@ window.addEventListener('submit', (e) => {
 
 window.addEventListener('click', (e) => {
   if (!e.target.matches('.fa-thumbs-up')) return;
-  const i = e.target.parentElement.id
+  const i = e.target.parentElement.id;
   const like = {
-    "item_id": `${i}`
-}
+    'item_id': `${i}`,
+  };
   createLike(i, like);
   getLikes();
-  console.log(like);
-})
+});
