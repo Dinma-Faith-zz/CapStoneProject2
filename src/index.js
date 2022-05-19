@@ -3,7 +3,6 @@ import display from './module/home.js';
 import displayPopup from './module/popup.js';
 
 display();
-
 window.addEventListener('click', (e) => {
   if (!e.target.matches('.popup-btn')) return;
   if (e.target.parentElement.id === e.target.id) {

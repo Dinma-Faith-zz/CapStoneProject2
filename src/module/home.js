@@ -1,4 +1,5 @@
 import { url, displayHome } from './variables.js';
+import { reservPop } from './reservations.js';
 
 const display = async () => {
   let id = 0;
@@ -18,6 +19,11 @@ const display = async () => {
       (id += 1),
     )
     .join('');
+    const reservationBtns=document.querySelectorAll('.reservation-btn')
+    reservationBtns.forEach((btn)=>{
+      btn.addEventListener('click',reservPop)
+    })
+
 };
 
 window.addEventListener('load', display);

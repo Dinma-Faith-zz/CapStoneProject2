@@ -146,3 +146,159 @@ button {
 .icon {
   cursor: pointer;
 }
+
+/*pop up for reservation*/
+.modal {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0 0 0 /75%);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-family: poppins, sans-serif;
+  display: none;
+  z-index: 20;
+}
+
+.modal-container {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px black;
+  overflow-y: auto;
+  background-color:whitesmoke;
+  border-radius: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.fa-solid {
+  color:#3f1700;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  font-size: 3rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.fa-solid:hover {
+  color: black;
+  transform: scale(0.7);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-comment {
+  text-align: center;
+  margin-top: 1rem;
+  opacity: 0.9;
+}
+
+.comment {
+  text-align: start;
+  padding: 0.5rem;
+}
+
+.comments {
+  opacity: 0.9;
+}
+
+.pop-header {
+  width: 100%;
+  text-align: center;
+  opacity: 0.8;
+  text-shadow: 3px 3px 3px grey;
+}
+
+.image-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.pop {
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.description {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.insight {
+  height: 5rem;
+  margin-top: 1rem;
+  font-family: poppins, sans-serif;
+  outline: none;
+  padding: 0.2rem 0.5rem;
+}
+
+.name {
+  margin-top: 0.5rem;
+  font-family: poppins, sans-serif;
+  outline: none;
+  padding: 0.2rem 0.5rem;
+  border:1px solid grey;
+}
+
+.addReserve-btn {
+  margin-top: 1rem;
+  padding: 0.2rem 0.5rem;
+  width: 60%;
+  font-family: poppins, sans-serif;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  background-color: #3f1700;
+  color: white
+}
+
+.addReserve-btn:hover {
+  background-color: white;
+  color: #3f1700;
+  border: 1px solid #3f1700;;
+}
+
+.show {
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+ 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.span {
+  width: 10rem;
+}
+
+.video-link {
+  color: brown;
+}
