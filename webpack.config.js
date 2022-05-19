@@ -49,7 +49,7 @@ module.exports = {
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
-      //html loader
+      //  html loader
       {
         test: /\.html$/i,
         loader: 'html-loader',

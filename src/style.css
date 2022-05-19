@@ -170,13 +170,13 @@ button {
   align-items: center;
   box-shadow: 0 0 10px black;
   overflow-y: auto;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   border-radius: 0.5rem;
   padding-bottom: 1rem;
 }
 
 .fa-solid {
-  color:#3f1700;
+  color: #3f1700;
   position: absolute;
   right: 2%;
   top: 2%;
@@ -251,7 +251,7 @@ button {
   font-family: poppins, sans-serif;
   outline: none;
   padding: 0.2rem 0.5rem;
-  border:1px solid grey;
+  border: 1px solid grey;
 }
 
 .addReserve-btn {
@@ -263,13 +263,13 @@ button {
   transition: all 0.2s ease-in;
   cursor: pointer;
   background-color: #3f1700;
-  color: white
+  color: white;
 }
 
 .addReserve-btn:hover {
   background-color: white;
   color: #3f1700;
-  border: 1px solid #3f1700;;
+  border: 1px solid #3f1700;
 }
 
 .show {
@@ -278,7 +278,6 @@ button {
 
 ::-webkit-scrollbar {
   width: 10px;
- 
 }
 
 ::-webkit-scrollbar-track {

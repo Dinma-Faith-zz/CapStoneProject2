@@ -2,13 +2,14 @@ import { resModal, url } from './variables';
 import { reserveMeal } from './postReservation';
 
 const popupArray = [52802, 52815, 52835, 52896, 52903, 52906];
-const remove = (container) => {
+const remove = () => {
   const divContainer = document.querySelector('.modal-container');
   divContainer.remove();
   resModal.classList.remove('show');
 };
-export const reservPop = async (e) => {
-  const id = e.target.id;
+const reservPop = async (e) => {
+  const item = e.target;
+  const id = item.id;
   const fetchData = await fetch(`${url}/lookup.php?i=${popupArray[id]}`);
   const data = await fetchData.json();
   const meal = data.meals;
@@ -48,3 +49,5 @@ export const reservPop = async (e) => {
   removeBtn.addEventListener('click', remove);
   reserve.addEventListener('click', reserveMeal);
 };
+
+export default reservPop;
