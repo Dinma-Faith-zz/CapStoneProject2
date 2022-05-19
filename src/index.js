@@ -1,7 +1,6 @@
 import './style.css';
 import display from './module/home.js';
-import displayPopup, { getComments, postComments } from './module/popup.js';
-// import getComments, { postComments } from './module/comments.js';
+import displayPopup, { getComments, postComments, commentsCounter } from './module/popup.js';
 
 display();
 window.addEventListener('click', (e) => {
@@ -28,5 +27,7 @@ window.addEventListener('submit', (e) => {
     };
     e.target.reset();
     postComments(i, comment);
+    displayPopup(i);
+    commentsCounter(i);
   }
 });
