@@ -346,3 +346,11 @@ button {
   min-width: 25em;
   overflow-y: auto;
 }
+
+.reserves {
+  text-align: center;
+}
+
+.country {
+  margin-top: 0.5rem;
+}
