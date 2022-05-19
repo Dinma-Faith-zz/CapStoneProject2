@@ -1,5 +1,5 @@
 import './style.css';
-import displayPopup from './module/popup.js';
+// import displayPopup from './module/popup.js';
 import { createLike, getLikes } from './module/likes.js';
 import displayPopup, { getComments, postComments } from './module/popup.js';
 // import getComments, { postComments } from './module/comments.js'
