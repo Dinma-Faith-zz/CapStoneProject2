@@ -1,6 +1,6 @@
 import { resModal, url } from './variables';
-import displayPopup from './popup';
 import { reserveMeal } from './postReservation';
+
 const popupArray = [52802, 52815, 52835, 52896, 52903, 52906];
 const remove = (container) => {
   const divContainer = document.querySelector('.modal-container');
