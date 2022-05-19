@@ -1,20 +1,20 @@
-import { resModal, url } from "./variables"
-import displayPopup from "./popup"
-import { reserveMeal } from "./postReservation";
+import { resModal, url } from './variables';
+import displayPopup from './popup';
+import { reserveMeal } from './postReservation';
 const popupArray = [52802, 52815, 52835, 52896, 52903, 52906];
-const remove =(container)=>{
-  const divContainer=document.querySelector('.modal-container')
-  divContainer.remove()
-  resModal.classList.remove('show')
-}
-export const reservPop=async(e)=>{
-    const id=e.target.id
-    const fetchData = await fetch(`${url}/lookup.php?i=${popupArray[id]}`);
-    const data = await fetchData.json()
-    const meal=data.meals
-    const container=document.createElement('div')  
-    container.classList.add('modal-container') 
-    container.innerHTML=`
+const remove = (container) => {
+  const divContainer = document.querySelector('.modal-container');
+  divContainer.remove();
+  resModal.classList.remove('show');
+};
+export const reservPop = async (e) => {
+  const id = e.target.id;
+  const fetchData = await fetch(`${url}/lookup.php?i=${popupArray[id]}`);
+  const data = await fetchData.json();
+  const meal = data.meals;
+  const container = document.createElement('div');
+  container.classList.add('modal-container');
+  container.innerHTML = `
     <div class="image-div">
       <img src="${meal[0].strMealThumb}" alt="meal-img" class="pop" />
       <i class="fa-solid fa-xmark"></i>
@@ -40,11 +40,11 @@ export const reservPop=async(e)=>{
         <input type="text" class="name" placeholder="End date"/>
         <button class="addReserve-btn">Reserve</button>
       </div>
-    </div>`
-  resModal.appendChild(container)
-  resModal.classList.add('show')
-  const removeBtn=document.querySelector('.fa-xmark')
-  const reserve=document.querySelector('.addReserve-btn')
-  removeBtn.addEventListener('click',remove)
-  reserve.addEventListener('click',reserveMeal)
-}
+    </div>`;
+  resModal.appendChild(container);
+  resModal.classList.add('show');
+  const removeBtn = document.querySelector('.fa-xmark');
+  const reserve = document.querySelector('.addReserve-btn');
+  removeBtn.addEventListener('click', remove);
+  reserve.addEventListener('click', reserveMeal);
+};

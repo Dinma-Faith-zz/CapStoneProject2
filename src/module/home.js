@@ -19,11 +19,10 @@ const display = async () => {
       (id += 1),
     )
     .join('');
-    const reservationBtns=document.querySelectorAll('.reservation-btn')
-    reservationBtns.forEach((btn)=>{
-      btn.addEventListener('click',reservPop)
-    })
-
+  const reservationBtns = document.querySelectorAll('.reservation-btn');
+  reservationBtns.forEach((btn) => {
+    btn.addEventListener('click', reservPop);
+  });
 };
 
 window.addEventListener('load', display);
