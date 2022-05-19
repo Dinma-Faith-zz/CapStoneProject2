@@ -7,7 +7,6 @@ const displayPopup = async (i) => {
   const data = await fetchData.json();
   modal.classList.add('open');
   overlay.classList.add('open');
-
   modal.innerHTML = data.meals
     .map(
       (meal) => `<div class="popup-container">
