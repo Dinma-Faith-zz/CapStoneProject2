@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1652992451252" clover="3.2.0">
-  <project timestamp="1652992451252" name="All files">
+<coverage generated="1652992854652" clover="3.2.0">
+  <project timestamp="1652992854652" name="All files">
     <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="5" coveredelements="5" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1"/>
     <file name="commentCount.js" path="/home/eid/repos/CapStoneProject2/src/module/commentCount.js">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
