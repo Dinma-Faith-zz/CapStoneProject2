@@ -33,7 +33,7 @@ window.addEventListener('submit', (e) => {
     e.target.reset();
     postComments(i, comment);
     displayPopup(i);
-    commentsCounter(i);
+    // commentsCounter(i);
   }
 });
 
