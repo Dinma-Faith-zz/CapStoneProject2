@@ -108,6 +108,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-height: 80vh;
 }
 
 .popup-container i {
@@ -342,6 +343,6 @@ button {
 .all-comments {
   padding: 0.5em;
   max-height: 7em;
-  min-width: 20em;
+  min-width: 25em;
   overflow-y: auto;
 }
