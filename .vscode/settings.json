@@ -1,4 +1,6 @@
 {
-    "liveServer.settings.port": 5501,
-    "prettier.trailingComma": "all"
+  "liveServer.settings.port": 5501,
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 100,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
