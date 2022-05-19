@@ -7,10 +7,10 @@ const remove = () => {
   divContainer.remove();
   resModal.classList.remove('show');
 };
-const reservPop = async (e) => {
+export const reservPop = async (e) => {
   const item = e.target;
-  const id = item.id;
-  const fetchData = await fetch(`${url}/lookup.php?i=${popupArray[id]}`);
+  const myId = item.id;
+  const fetchData = await fetch(`${url}/lookup.php?i=${popupArray[myId]}`);
   const data = await fetchData.json();
   const meal = data.meals;
   const container = document.createElement('div');
@@ -49,5 +49,3 @@ const reservPop = async (e) => {
   removeBtn.addEventListener('click', remove);
   reserve.addEventListener('click', reserveMeal);
 };
-
-export default reservPop;
