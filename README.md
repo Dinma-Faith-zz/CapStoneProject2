@@ -3,6 +3,11 @@
 This is our capstone project, we built a retaurant website using the [TheMealDb API](https://www.themealdb.com/api.php) and the [The Involvement API](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270) .
 In this website you can Like, Comment and Reserve meals. We hope you like it :)
 
+# Screenshot
+
+![foodWebsiteModule2Capstone](https://user-images.githubusercontent.com/69027469/169603706-d24a9c5b-3ea1-4871-b5c7-aea702ac3991.jpeg)
+
+
 ## Built With
 
 - HTML
