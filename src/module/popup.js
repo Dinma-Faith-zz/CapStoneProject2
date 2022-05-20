@@ -2,21 +2,14 @@ import { url, modal, overlay, involvmentAPI } from './variables.js';
 
 const popupArray = [52802, 52815, 52835, 52896, 52903, 52906];
 
-export const commentsCounter = async (i) => {
-  const response = await fetch(`${involvmentAPI}/apps/wC4fHH83VpkiJclfAEX8/comments?item_id=${+i}`);
-  const data = await response.json();
-  const arr = Array.from(data);
-
-  const commentsCounter = modal.querySelector('.comments-counter');
-  commentsCounter.innerHTML = `(${arr.length})`;
-};
-
 export const getComments = async (i) => {
   const response = await fetch(`${involvmentAPI}/apps/wC4fHH83VpkiJclfAEX8/comments?item_id=${+i}`);
   const data = await response.json();
   const arr = Array.from(data);
 
   const commentContainer = modal.querySelector('.all-comments');
+  const commentsCounter = modal.querySelector('.comments-counter');
+  commentsCounter.innerHTML = `(${arr.length})`;
   commentContainer.innerHTML = arr
     .map(
       (comment) => `
@@ -42,7 +35,7 @@ const displayPopup = async (i) => {
   const data = await fetchData.json();
   modal.classList.add('open');
   overlay.classList.add('open');
-  const counter = commentsCounter();
+
   modal.innerHTML = data.meals
     .map(
       (meal) => `<div class="popup-container">
@@ -66,7 +59,6 @@ const displayPopup = async (i) => {
   </div>`,
     )
     .join('');
-  commentsCounter(i);
 };
 
 function closeModal() {
