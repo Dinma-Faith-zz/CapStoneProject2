@@ -3,6 +3,15 @@ import { reservPop } from './reservations.js';
 import { createLike } from './likes.js';
 import { getLikes } from './likes.js';
 
+const likesCount = (target, likesArray, numOfLikes) => {
+  likesArray.forEach((obj) => {
+    if (obj.item_id === target.id) {
+      numOfLikes.innerHTML = `${obj.likes} likes `;
+    }
+  });
+};
+
+
 const pasteLike = async (item, paragraph) => {
   if (paragraph === undefined) {
     const paragraph = document.querySelectorAll('.like-show')
@@ -24,6 +33,10 @@ const display = async () => {
   let id = 0;
   const fetchData = await fetch(`${url}/search.php?f=f`);
   const data = await fetchData.json();
+  const num = data.meals.slice(0, 6).length;
+  console.log(num);
+  const counter = document.querySelector('#homeCount');
+  counter.textContent = `Total Meals ${num}`
   displayHome.innerHTML = data.meals
     .slice(0, 6)
     .map(
