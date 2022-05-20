@@ -62,7 +62,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-- [Go live](https://)
+- [Go live](https://dinma-faith.github.io/CapStoneProject2/)
 
 👤 **Authors**
 
