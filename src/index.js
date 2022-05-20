@@ -1,8 +1,9 @@
 import './style.css';
+import displayPopup, { getComments, postComments } from './module/popup.js';
 import display from './module/home.js';
-import displayPopup, { getComments, postComments, commentsCounter } from './module/popup.js';
 
 display();
+
 window.addEventListener('click', (e) => {
   if (!e.target.matches('.popup-btn')) return;
   if (e.target.parentElement.id === e.target.id) {
@@ -28,6 +29,5 @@ window.addEventListener('submit', (e) => {
     e.target.reset();
     postComments(i, comment);
     displayPopup(i);
-    commentsCounter(i);
   }
 });
