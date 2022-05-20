@@ -2,5 +2,7 @@
   "liveServer.settings.port": 5501,
   "prettier.trailingComma": "all",
   "prettier.printWidth": 100,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true
 }
