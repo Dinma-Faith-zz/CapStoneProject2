@@ -18,6 +18,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].bundle.js',
+    publicPath: '/CapStoneProject2/',
   },
   plugins: [
     new HtmlWebpackPlugin({
