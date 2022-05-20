@@ -2,8 +2,6 @@ import './style.css';
 import displayPopup, { getComments, postComments } from './module/popup.js';
 import display from './module/home.js';
 
-
-
 display();
 
 window.addEventListener('click', (e) => {
