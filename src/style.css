@@ -59,7 +59,6 @@ button {
   height: 40px;
   background-color: rgb(49, 39, 39);
   color: #fff;
-  border: none;
   cursor: pointer;
   border-radius: 3%;
   padding-inline: 10%;
@@ -72,6 +71,7 @@ button:hover {
   background-color: transparent;
   color: rgb(49, 39, 39);
 }
+
 .footer-div {
   text-align: center;
   font-size: 1.5rem;
