@@ -11,23 +11,21 @@ const likesCount = (target, likesArray, numOfLikes) => {
   });
 };
 
-
 const pasteLike = async (item, paragraph) => {
   if (paragraph === undefined) {
-    const paragraph = document.querySelectorAll('.like-show')
+    const paragraph = document.querySelectorAll('.like-show');
     const getAllLikes = await getLikes();
     getAllLikes.forEach((like) => {
       if (like.item_id === item) {
         paragraph.forEach((card) => {
           if (card.id === item) {
-            card.innerHTML = `${like.likes}`
+            card.innerHTML = `${like.likes}`;
           }
-        })
+        });
       }
-    })
+    });
   }
- 
-}
+};
 
 const display = async () => {
   let id = 0;
@@ -36,12 +34,12 @@ const display = async () => {
   const num = data.meals.slice(0, 6).length;
   console.log(num);
   const counter = document.querySelector('#homeCount');
-  counter.textContent = `Total Meals ${num}`
+  counter.textContent = `Available meals(${num})`;
   displayHome.innerHTML = data.meals
     .slice(0, 6)
     .map(
-      (meal, id) => `<div id="${id}">
-  <img src="${meal.strMealThumb}">
+      (meal, id) => `<div class="card" id="${id}">
+  <img src="${meal.strMealThumb}" class="thumbnail">
   <span class="meals">${meal.strMeal}</span>
   <i class="fa fa-thumbs-up" id=${meal.idMeal}></i><p class="like-show" id=${meal.idMeal}></p>
   <br>
@@ -58,14 +56,14 @@ const display = async () => {
 
   const likeShow = document.querySelectorAll('.fa-thumbs-up');
   likeShow.forEach((like) => {
-    pasteLike(like.id)
+    pasteLike(like.id);
     like.addEventListener('click', async () => {
-      console.log(like.id)
-      await createLike(like.id)
+      console.log(like.id);
+      await createLike(like.id);
 
-      pasteLike(like.id)
-    })
-  })
+      pasteLike(like.id);
+    });
+  });
 };
 
 window.addEventListener('load', display);

@@ -5,6 +5,10 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+body {
+  background: linear-gradient(100deg, #ad8282 10%, #c2998c 25%);
+}
+
 img {
   display: block;
   width: 100%;
@@ -25,25 +29,25 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 6em;
+  padding: 1rem;
 }
 
 .nabvar {
   display: flex;
   gap: 2em;
   list-style: none;
+  font-size: 2rem;
 }
 
 .home-section {
   text-align: center;
-  padding-top: 7%;
 }
 
 .display-home {
   display: grid;
+  place-items: center;
   grid-template-columns: 33.33% 33.33% 33.33%;
-  gap: 5%;
-  padding: 10%;
-  margin-left: -9%;
+  gap: 3px;
 }
 
 .meals {
@@ -60,12 +64,21 @@ button {
   border-radius: 3%;
   padding-inline: 10%;
   font-size: 100%;
+  border: 1px solid rgb(49, 39, 39);
+  transition: all 0.3s ease-in-out;
 }
 
+button:hover {
+  background-color: transparent;
+  color: rgb(49, 39, 39);
+}
 .footer-div {
-  position: fixed;
-  bottom: 15px;
-  left: 40%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  background: linear-gradient(100deg, #ad8282 10%, #c2998c 25%);
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 #modal {
@@ -109,6 +122,7 @@ button {
   justify-content: center;
   align-items: center;
   max-height: 80vh;
+  position: relative;
 }
 
 .popup-container i {
@@ -120,6 +134,7 @@ button {
   width: 12em;
   height: 10em;
   margin-bottom: 1em;
+  margin-top: 3rem;
 }
 
 .popup-meal {
@@ -147,6 +162,10 @@ button {
 
 .icon {
   cursor: pointer;
+  position: absolute;
+  top: 2%;
+  font-size: 2rem;
+  right: 3%;
 }
 
 /* pop up for reservation */
@@ -156,7 +175,7 @@ button {
   background-color: rgba(0 0 0 /75%);
   position: fixed;
   top: 0;
-  padding: 1rem;
+  padding: 2rem;
   font-family: poppins, sans-serif;
   display: none;
   z-index: 20;
@@ -344,6 +363,7 @@ button {
   padding: 0.5em;
   max-height: 7em;
   min-width: 25em;
+  min-height: 3em;
   overflow-y: auto;
 }
 
@@ -353,4 +373,83 @@ button {
 
 .country {
   margin-top: 0.5rem;
+}
+
+.eid {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.frank {
+  margin-left: 0.3rem;
+}
+
+.fa-thumbs-up {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #557571;
+}
+
+.fa-thumbs-up:hover {
+  color: rgb(73, 13, 13);
+}
+
+.fa-thumbs-up:focus {
+  color: brown;
+}
+
+.thumbnail {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.thumbnail:hover {
+  transform: scale(0.9);
+}
+
+.card {
+  max-width: 25em;
+  border: 5px solid #557571;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+.footer-div a {
+  color: #557571;
+  font-weight: 700;
+}
+
+#homeCount {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-shadow: 3px 3px 3px rgb(209, 196, 196);
+}
+
+.home-section h1 {
+  color: #557571;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.home-section p {
+  font-size: 1.2rem;
+}
+
+.nabvar a {
+  color: #557571;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nabvar li {
+  transition: all 0.3s ease-in-out;
+}
+
+.nabvar li:hover {
+  transform: scale(1.2);
 }
